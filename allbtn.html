@@ -13,7 +13,7 @@
             top: 50%;
             left:50%;
             transform: translate(-50%,-50%);
-            background-color: yellow;
+            background-color: transparent;
             padding: 0;
             display: flex;
             align-items: center;
@@ -47,5 +47,13 @@
     <button id="animationAllbtn">
         <span></span>
     </button>
+    <script>
+    
+         document.getElementById("animationAllbtn").addEventListener('click', function() {
+             document.getElementById("animationAllbtn").classList.add("show");
+            //  document.body.classList ="show action popup";
+        })
+
+    </script>
 </body>
 </html>
