@@ -61,16 +61,21 @@
         <span></span>
     </button>
     <script>
-      let status = true;
-            document.getElementById("animationAllbtn").addEventListener('click', function(){
-               if(status){
-                document.getElementById("animationAllbtn").classList.add("show");
-                status =false;
-               }else{
-                document.getElementById("animationAllbtn").classList.remove("show");
-                status = true;
-               }
-            })
+    //   let status = true;
+    //         document.getElementById("animationAllbtn").addEventListener('click', function(){
+    //            if(status){
+    //             document.getElementById("animationAllbtn").classList.add("show");
+    //             status =false;
+    //            }else{
+    //             document.getElementById("animationAllbtn").classList.remove("show");
+    //             status = true;
+    //            }
+    //         })
+
+    const btn = document.getElementById("animationAllbtn");
+    btn.addEventListener("click", () => {
+    btn.classList.toggle("show");
+    });
     </script>
 </body>
 </html>
