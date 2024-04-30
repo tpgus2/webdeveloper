@@ -21,12 +21,19 @@
     </style>
 </head>
 <body>
-    <i class="bi bi-list fs-7" id="allBtn"></i>
+    <i class="bi bi-list fs-1" id="allBtn"></i>
     <!-- bi-x-lg -->
     <script>
         const allBtn = document.getElementById("allBtn");
+        let status = true;
         allBtn.addEventListener("click", function () {
-            allBtn.classList.toggle("bi-x-lg")
+            if(status){
+                allBtn.classList = "bi bi-list fs-1 bi-x-lg text-red";
+                status = false;
+            }else{
+                allBtn.classList = "bi bi-list fs-1";
+                status = true;
+            }
         })
     </script>
 </body>
