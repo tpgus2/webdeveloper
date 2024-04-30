@@ -1,0 +1,25 @@
+.img-fluid{
+    max-width: 100%;
+}
+#mainBanner{
+    background-image: url("../img/bg.png"); 
+    height: 100vw;
+    max-height: 800px; /*이미지가 가진 사이즈 확인해서 수치 넣기*/
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto 100%; /*x축,y축*/
+    transition: 0.5s;
+    color: white;
+    font-size: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#mainBanner:hover{
+    background-size: auto 150%;
+}
+@media (max-width:991px) {
+    h2 span {
+        display: none;  /*너비가 991px보다 작아지면 안나올거다*/
+    }
+}
